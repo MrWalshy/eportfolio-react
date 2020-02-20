@@ -3,9 +3,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
@@ -40,24 +37,21 @@ function App() {
                     Contact
                   </Link>
                 </Nav>
-                {/* <Nav.Link to={"/projects"}>Projects</Nav.Link>
-                <Nav.Link to={"/contact"}>Contact</Nav.Link> */}
               </Nav>
             </Navbar.Collapse>
           </Navbar>
         </header>
 
-        <Container>
-          <Row>
-            <Col md={12}>
-              <Switch>
-                <Route exact path="/" component={Home}/>
-                <Route path="/projects" component={Projects} />
-                <Route path="/contact" component={Contact} />
-              </Switch>
-            </Col>
-          </Row>
-        </Container>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/eportfolio-react" component={Home} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+
+        <footer className="bg-dark text-white container-fluid footer">
+          <h6 className="mb-0 py-2">&copy; Copyright 2016</h6>
+        </footer>
       </div>
     </Router>
   );
