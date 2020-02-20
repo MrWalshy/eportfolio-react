@@ -50,7 +50,7 @@ function App() {
         </Switch>
 
         <footer className="bg-dark text-white container-fluid footer">
-          <h6 className="mb-0 py-2">&copy; Copyright 2016</h6>
+          <h6 className="mb-0 py-2">&copy; Copyright 2020</h6>
         </footer>
       </div>
     </Router>
