@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Home from './components/home.component';
 import Projects from './components/projects.component';
 import Contact from './components/contact.component';
+import Admin from './components/admin.component';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path="/eportfolio-react" component={Home} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
+          <Route path="/admin" component={Admin} />
         </Switch>
 
         <footer className="bg-dark text-white container-fluid footer">

@@ -4,8 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ProjectCard from './projectComponents/projectCard.component';
 
-const card0 = {name: "My First Project", description: "I followed mobile-first development to build my website to ensure as wide an audience is reached. I decided to use a simple, clean yet visually appealing layout."};
-const card1 = {name: "My Second Project", description: "What another description!"};
+const card0 = {name: "My First Project", img: "http://via.placeholder.com/800x400.png", repo: "https://github.com/MrWalshy/e-portfolio-main", description: "I followed mobile-first development to build my website to ensure as wide an audience is reached. I decided to use a simple, clean yet visually appealing layout."};
+const card1 = {name: "My Second Project", img: "http://via.placeholder.com/800x400.png", repo: "https://github.com/MrWalshy/e-portfolio-main", description: "What another description!"};
 
 export default class Projects extends Component {
     render() {
@@ -19,7 +19,12 @@ export default class Projects extends Component {
                 </Row>
                 <hr className="mb-0"/>
                 <Row id="projects" className="mx-0 mb-4 justify-content-around">
+                    {/* info is passed in as 'props' obj */}
                     <ProjectCard info={card0}></ProjectCard>
+                    <ProjectCard info={card1}></ProjectCard>
+                    <ProjectCard info={card1}></ProjectCard>
+                    <ProjectCard info={card1}></ProjectCard>
+                    <ProjectCard info={card1}></ProjectCard>
                     <ProjectCard info={card1}></ProjectCard>
                 </Row>
             </Container>

@@ -36,8 +36,8 @@ export default class Home extends Component {
                     </Col>
                 </Row>
                 <hr className="mb-0"/>
-                <Row className="mx-0 mb-4 pb-2">
-                    <Col className="px-0">
+                <Row className="mx-0 mb-4 pb-2 justify-content-around">
+                    <Col className="px-0" lg={11}>
                         <Carousel>
                             <Carousel.Item>
                                 <img
