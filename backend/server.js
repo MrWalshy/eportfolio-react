@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dbConfig = require('./database/db');
+const passport = require('passport');
 
 // Express Routes
 const contactRoutes = require('../backend/routes/contact.route');
@@ -17,6 +18,7 @@ const connectDb = async () => {
 
         console.info(`Connected to database on Worker process: ${process.pid}`);
     } catch (error) {
+        console.log(error);
         console.log('Database Connection: FAIL!')
         process.exit(1); // Exits process even if async ops pending
     }
@@ -31,6 +33,10 @@ app.use(express.urlencoded({extended: true}));
 app.use(cors());
 app.use('/contact', contactRoutes);
 app.use('/admin', adminRoutes);
+
+// Initialise Passport middleware
+app.use(passport.initialize());
+require('./database/passport')(passport);
 
 // PORT
 const port = process.env.PORT || 4000;

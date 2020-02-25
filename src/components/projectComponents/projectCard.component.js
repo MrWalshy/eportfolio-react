@@ -27,7 +27,7 @@ export default class ProjectCard extends Component {
                 // <Col className="card col-12 col-md-5 px-0 my-3 mx-xl-3 project-card">
                 <Col className={this.state.expandClicked ? 
                     "card col-12 px-0 my-0 mx-xl-3 project-card" : 
-                    "card col-12 col-md-5 px-0 my-0 mx-xl-3 project-card"
+                    "card col-12 col-md-5 px-0 my-3 mx-xl-3 project-card"
                 }>
                     <img className="card-img-top h-40" src={this.props.info.img} alt="First Image"/>
                     <button className="expand-btn btn btn-light text-center d-none d-md-block" onClick={this.onClickCardExpand}>

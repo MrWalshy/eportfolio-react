@@ -1,3 +1,37 @@
+# Notes
+## Concurrently
+- Development dependancy for starting both the front and backend of a website
+- Only use in development
+- Commonly used alongside 'nodemon' in development
+
+        npm i -D concurrently
+
+        // Use run dev to run in development mode
+        npm run dev
+
+# Todos
+- Remove register page and backend in production
+- Refactor components, some can be split into more than 1 component
+
+## bcryptjs
+- Used to hash data before storing in a db
+
+## is-empty
+- Global function, useful with validator
+
+## jsonwebtoken
+- used for authorization
+
+## passport
+- authenticates requests, plugins called 'strategies'
+
+## passport-jwt
+- passport strategy for authenticating with a JSON Web Token(JWT)
+
+## validator
+- validates inputs like emails, matching passwords, etc...
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

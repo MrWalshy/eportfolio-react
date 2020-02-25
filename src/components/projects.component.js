@@ -18,7 +18,7 @@ export default class Projects extends Component {
                     </Col>
                 </Row>
                 <hr className="mb-0"/>
-                <Row id="projects" className="mx-0 mb-4 justify-content-around">
+                <Row id="projects" className="mx-3 mb-4 justify-content-around">
                     {/* info is passed in as 'props' obj */}
                     <ProjectCard info={card0}></ProjectCard>
                     <ProjectCard info={card1}></ProjectCard>
